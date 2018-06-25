@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_gravity="center"
+    android:gravity="center"
+android:orientation="vertical">
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="40dp"
+        android:layout_marginBottom="30dp"
+        android:text="2018 June"/>
+
+        <EditText
+            android:id="@+id/add1"
+            android:hint="일정을 입력하세요"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/addBtn"
+            android:text="일정 추가"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#21994f"
+            android:textColor="#ffffff"
+            android:onClick="addItems"/>
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="1000px"
+            android:drawSelectorOnTop="false"
+            />
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="50dp"
+        android:text="''R=VD 과탑''" />
+
+    <ImageButton
+        android:id="@+id/gotoWrite"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00000000"
+        android:scaleType="centerInside"
+        android:src="@drawable/write"/>
+    <ImageButton
+        android:id="@+id/gotoStudy"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00000000"
+        android:scaleType="centerInside"
+        android:src="@drawable/gotostudy"/>
+    </LinearLayout>
+</LinearLayout>
